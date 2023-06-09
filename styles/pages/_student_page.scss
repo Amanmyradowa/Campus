@@ -1,0 +1,146 @@
+.container{
+    .page_student{
+        width: 100%;
+        padding-bottom: 75px;
+        .header{
+            @include flex();
+            margin-bottom: 45px;
+            .title{
+                text-transform: capitalize;
+                text-align: center;
+                color: $green;
+                font-weight: 600;
+                font-size: 40px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .navigation_menu{
+                @include flex(center);
+                background: $green;
+                padding: 40px 105px;
+                border-radius: 0px 0px 16px 16px;
+                .link{
+                    margin-right: 40px;
+                    color: black;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                .active{
+                    @include flex(center,center,column);
+                    .link{
+                        margin-right: 0;
+                        font-weight: 700;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #ffffff;;
+                    }
+                }
+            }
+            .header_left{
+                @include flex(flex-start);
+                border: 1px solid $green;
+                border-radius: 16px;
+                .name_lastname{
+                    text-transform: capitalize;
+                    padding: 14px 0 14px 24px;
+                    color: $black;
+                    margin-right: 15px;
+                }
+                .admin_img{
+                    display: flex;
+                }
+            }
+        }
+        .table_title{
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+        .table_container{
+            display: grid;
+            grid-template-columns: .010fr auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto;
+            margin-bottom: 25px;
+            grid-row-gap: 10px;
+
+            .table_head{
+                background-color: $background;
+                padding: 20px;
+                font-weight: 600;
+            }
+            .table_data{
+                padding: 20px;
+                border: 1px solid #9FC19F;
+                border-left: none; 
+                border-right: none; 
+            }
+            .red{
+                color: $berkKayinch;
+            }
+            .green{
+                color: $dushundirish;
+            }
+            .blue{
+                color: $duydurush;
+            }
+            .yellow{
+                color: $kayinch;
+            }
+            #border{
+                border: none;
+            }
+            .left{
+                border-radius: 16px 0 0 16px;
+                border-left: 1px solid #9FC19F;
+            }
+            .right{
+                border-radius: 0 16px 16px 0;
+                border-right: 1px solid #9FC19F;
+            }
+        }
+        .footer{
+            @include flex();
+            .footer_main{
+                @include flex(flex-start);
+                p{
+                    color: $grey;
+                }
+                .page_num{
+                    margin: 0 15px;
+                    padding: 3px 18px;
+                    border: 2px solid $grey;
+                }
+            }
+            .footer_main{
+                .transfers_icons{
+                    @include flex();
+                    .transfer_icon{
+                        @include flex(flex-start);
+                        .prev{
+                            margin-left: 22px;
+                            color: $black;
+                        }
+                        .next{
+                            color: $black;
+                            margin: 0 22px 0 40px;
+                        }
+                        &.passive{
+                            svg{
+                                path{
+                                    fill: #787878;
+                                }
+                            }
+                            p{
+                                color: #787878;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

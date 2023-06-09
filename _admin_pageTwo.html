@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page_adminTwo">
+            <header class="header">
+                <a class="title" href="./index.html">campus</a>
+
+                <nav class="navigation_menu">
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="active">
+                        <div class="link">temmiler</div>
+                        <span></span>
+                    </div>
+                </nav>
+                <div class="header_left">
+                    <div class="name_lastname">admin admin</div>
+                    <div class="admin_img">
+                        <img id="admin" src="./images/admin.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <h1 class="table_title">Temmi gosmak</h1>
+            <div class="table_container">
+
+                <div id="border" class="table_head left">Suraty</div>
+                <div class="table_head">Ady, Familyasy we Atasynyn ady</div>
+                <div class="table_head">Fakulteti</div>
+                <div class="table_head">Hunari</div>
+                <div class="table_head">Okuw yyly</div>
+                <div class="table_head">Temmi charesi</div>
+                <div class="table_head">Temmi alan senesi</div>
+                <div id="border" class="table_head right"></div>
+                
+                <div class="table_data left">
+                    <input type="file" accept="image/jpeg,image/png,image/gif" id="chooseImage" onchange="selectImage(this)" required>
+                    <div class="surat_gosh" onclick="chooseImageFunc()">
+                        <img src="./images/addImage.png" alt="">
+                    </div>
+                </div>
+                <div class="table_data"><input type="text" placeholder="A.A.F" class="input" id="name" required></div>
+                <div class="table_data">
+                    <div class="dropdown">
+                        <div class="icon_title" style="width: 180px; height: 80px;">
+                            <p id="title">Maglumat tehnologiyasy</p>
+                            <svg id="dropdownId" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0.5L5 5.5L10 0.5H0Z" fill="#787878"/>
+                            </svg>
+                        </div>
+                        <div class="dropdown_btn">
+                            <div onclick="changeDropdown(0,0)" class="active">Maglumat tehnologiyasy</div>
+                            <div onclick="changeDropdown(0,1)">Halkara gatnasyklary we halkara hukugy</div>
+                            <div onclick="changeDropdown(0,2)" >Halkara ynsanperwer bilimleri</div>
+                            <div onclick="changeDropdown(0,3)" >Tajircilik</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_data">
+                    <div class="dropdown">
+                        <div class="icon_title" style="width: 160px; height: 85px;">
+                            <p id="title">Maglumat tehnologiyasy1</p>
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0.5L5 5.5L10 0.5H0Z" fill="#787878"/>
+                            </svg>
+                        </div>
+                        <div class="dropdown_btn">
+                            <div onclick="changeDropdown(1,0)" class="active">Maglumat tehnologiyasy1</div>
+                            <div onclick="changeDropdown(1,1)" >Maglumat tehnologiyasy2</div>
+                            <div onclick="changeDropdown(1,2)">Maglumat tehnologiyasy3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_data">
+                    <div class="dropdown">
+                        <div class="icon_title" style="width: 80px; height: 40px;">
+                            <p id="title">I</p>
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0.5L5 5.5L10 0.5H0Z" fill="#787878"/>
+                            </svg>
+                        </div>
+                        <div class="dropdown_btn">
+                            <div onclick="changeDropdown(2,0)" class="active">I</div>
+                            <div onclick="changeDropdown(2,1)">II</div>
+                            <div onclick="changeDropdown(2,2)">III</div>
+                            <div onclick="changeDropdown(2,3)">IV</div>
+                            <div onclick="changeDropdown(2,4)">V</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_data "><input type="text" class="input" placeholder="Temmi charesi" required></div>
+                <div class="table_data"><input type="date" class="input"></div>
+                <div class="table_data right">
+                    <input type="file" accept="application/pdf" id="chooseFile">
+                    <svg onclick="chooseFileFunc()" width="20" height="20" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 8.90002C0.776142 8.90002 1 9.12388 1 9.40002V11.9C1 12.4523 1.44772 12.9 2 12.9H14C14.5523 12.9 15 12.4523 15 11.9V9.40002C15 9.12388 15.2239 8.90002 15.5 8.90002C15.7761 8.90002 16 9.12388 16 9.40002V11.9C16 13.0046 15.1046 13.9 14 13.9H2C0.895431 13.9 0 13.0046 0 11.9V9.40002C0 9.12388 0.223858 8.90002 0.5 8.90002Z" fill="#009000"/>
+                        <path d="M7.64645 0.146447C7.84171 -0.0488155 8.15829 -0.0488155 8.35355 0.146447L11.3536 3.14645C11.5488 3.34171 11.5488 3.65829 11.3536 3.85355C11.1583 4.04882 10.8417 4.04882 10.6464 3.85355L8.5 1.70711V10.5C8.5 10.7761 8.27614 11 8 11C7.72386 11 7.5 10.7761 7.5 10.5V1.70711L5.35355 3.85355C5.15829 4.04882 4.84171 4.04882 4.64645 3.85355C4.45118 3.65829 4.45118 3.34171 4.64645 3.14645L7.64645 0.146447Z" fill="#009000"/>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="button">
+                <!-- <a href="./admin_page.html"> -->
+                    <button onclick="sendData()" type="submit">Save</button>
+                <!-- </a> -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./admin_pageTwo.js"></script>
+</body>
+</html>

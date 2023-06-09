@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page_admin">
+            <header class="header">
+                <a class="title" href="./index.html">campus</a>
+
+                <nav class="navigation_menu">
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="active">
+                        <div class="link">temmiler</div>
+                        <span></span>
+                    </div>
+                </nav>
+                <div class="header_left">
+                    <div class="name_lastname">admin admin</div>
+                    <div class="admin_img">
+                        <img id="admin" src="./images/admin.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <div class="table_top">
+                <div class="table_top_left">
+                    <h3 class="title">Temmiler</h3>
+                </div>
+                <div class="table_top_right">
+                    <div class="search input_style">
+                        <input id="search" type="text" placeholder="Gozleg" onkeypress="search(event)">
+                        <label for="search">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.7549 11.255H11.9649L11.6849 10.985C12.6649 9.845 13.2549 8.365 13.2549 6.755C13.2549 3.165 10.3449 0.255005 6.75488 0.255005C3.16488 0.255005 0.254883 3.165 0.254883 6.755C0.254883 10.345 3.16488 13.255 6.75488 13.255C8.36488 13.255 9.84488 12.665 10.9849 11.685L11.2549 11.965V12.755L16.2549 17.745L17.7449 16.255L12.7549 11.255ZM6.75488 11.255C4.26488 11.255 2.25488 9.245 2.25488 6.755C2.25488 4.26501 4.26488 2.255 6.75488 2.255C9.24488 2.255 11.2549 4.26501 11.2549 6.755C11.2549 9.245 9.24488 11.255 6.75488 11.255Z" fill="#323232"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="date input_style">
+                        Sort by date
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 0L0 3.99H3V11H5V3.99H8L4 0ZM11 14.01V7H9V14.01H6L10 18L14 14.01H11Z" fill="#323232"/>
+                        </svg>
+                    </div>
+                    <a href="./_admin_pageTwo.html">
+                        <div class="plus input_style">
+                            Temmi gosmak
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#323232"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="table_container">
+            </div>
+            <footer class="footer">
+                <div class="footer_main">
+                    <p>Showing</p>
+                    <div class="page_num">1</div>
+                    <p>out of <span>0</span></p>
+                </div>
+                <div class="footer_main">
+                    <div class="transfers_icons">
+                        <div class="transfer_icon passive">
+                            <svg onclick="prev()" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8848 1.77L10.1148 0L0.114765 10L10.1148 20L11.8848 18.23L3.65477 10L11.8848 1.77Z" fill="#323232"/>
+                            </svg>
+                            <p class="prev">Prev</p>
+                        </div>
+                        <div class="transfer_icon">
+                            <p class="next">Next</p>
+                            <svg onclick="next()" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.115234 18.23L1.88523 20L11.8852 10L1.88523 0L0.115234 1.77L8.34523 10L0.115234 18.23Z" fill="#323232"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./admin_page.js"></script>
+</body>
+</html>

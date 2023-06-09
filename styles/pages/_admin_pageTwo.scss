@@ -1,0 +1,200 @@
+.container{
+    .page_adminTwo{
+        .header{
+        @include flex();
+        margin-bottom: 45px;
+        .title{
+            text-transform: capitalize;
+            text-align: center;
+            color: $green;
+            font-weight: 600;
+            font-size: 40px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .navigation_menu{
+            @include flex(center);
+            background: $green;
+            padding: 40px 105px;
+            border-radius: 0px 0px 16px 16px;
+            .link{
+                margin-right: 40px;
+                text-transform: capitalize;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            .active{
+                @include flex(center,center,column);
+                .link{
+                    margin-right: 0;
+                    font-weight: 700;
+                }
+                span{
+                    display: inline-block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #ffffff;;
+                }
+            }
+        }
+        .header_left{
+            @include flex(flex-start);
+            border: 1px solid $green;
+            border-radius: 16px;
+            .name_lastname{
+                text-transform: capitalize;
+                padding: 14px 0 14px 24px;
+                color: $black;
+                margin-right: 15px;
+            }
+            .admin_img{
+                display: flex;
+            }
+        }
+        }
+        .table_title{
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 50px;
+            font-size: 32px;
+        }
+        .table_container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto 10% 10% .01fr;
+            // grid-template-rows: auto auto;
+            margin: 25px 0;
+            grid-row-gap: 10px;
+
+            .table_head{
+                background-color: $background;
+                padding: 18px 30px;
+                font-weight: 600;
+            }
+            .table_data{
+                padding: 18px 15px;
+                border: 1px solid #9FC19F;
+                border-left: none; 
+                border-right: none;
+                @include flex(flex-start);
+                #name{
+                    border-bottom: 1px solid #9FC19F;
+                    padding: 5px;
+                }
+                .input{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    color: $black;
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    cursor: pointer;
+                }
+            }
+                ::-webkit-calendar-picker-indicator{
+                    cursor: pointer;
+                }
+            #border{
+                border: none;
+            }
+            .left{
+                border-radius: 16px 0 0 16px;
+                border-left: 1px solid #9FC19F;
+                input{
+                    display: none;
+                }
+                .surat_gosh{
+                    @include flex(center);
+                    cursor: pointer;
+                    width: 80px;
+                    height: 80px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 15px;
+                    }
+                }
+
+            }
+            .right{
+                border-radius: 0 16px 16px 0;
+                border-right: 1px solid #9FC19F;
+                input{
+                    display: none;
+                }
+            }
+            .dropdown{
+                position: relative;
+                cursor: pointer;
+                .icon_title{
+                    @include flex();
+                    #title{
+                        margin-right: 20px;
+                    }
+                    svg{
+                        transition: all .3s;
+                        &.show{
+                            transform: rotate(180deg);
+                            path{
+                                fill: #009000;
+                            }
+                        }
+                    }
+                }
+                .dropdown_btn{
+                    border: 1px solid #9FC19F;
+                    border-radius: 8px;
+                    margin-top: 10px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    background-color: #ffffff;
+                    overflow: hidden;
+                    display: none;
+                    // transition: all .8s;
+                    &.show{
+                        display: block;
+                    }
+                    div{
+                        line-height: 19px;
+                        color: $black;
+                        font-size: 16px;
+                        padding: 5px 10px;
+                        &:hover{
+                            background: #EBF1EB;
+                        }
+                        &.active{
+                            background: #EBF1EB;
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .icon_title{
+                padding: 10px;
+                background-color: $backDropd;
+                border-radius: 8px;
+                svg{
+                    min-width: 10px;
+                    min-height: 6px;
+                }
+            }
+        }
+        .button{
+            @include flex(flex-end);
+            button{
+                padding: 12px 30px;
+                font-weight: 700;
+                border-radius: 18px;
+                background-color: $green;
+                color: #ffffff;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: initial;
+    box-sizing: border-box;
+}
+.container{
+    width: 95%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+@mixin flex($justify:space-between,$aligin:center,$direction:row){
+    display: flex;
+    justify-content: $justify;
+    align-items: $aligin;
+    flex-direction: $direction;
+}
+svg{
+    cursor: pointer;
+}

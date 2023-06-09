@@ -1,0 +1,60 @@
+.center{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .title{
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        color: $green;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    form{
+        width: 25%;
+        margin: 0 auto;
+        #input_text{
+            background-color: $background;
+            padding: 15px;
+            margin: 15px;
+            width: 100%;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+        .password{
+            width: 100%;
+            @include flex(center);
+            background-color: $background;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            margin: 15px 15px 0 15px;
+
+            #input_password{
+                background-color: transparent;
+                width: 100%;
+                font-size: 16px;
+                border: none;
+                outline: none;
+            }
+            svg{
+                cursor: pointer;
+            }
+        }
+    }
+    button{
+        margin-top: 50px;
+        padding: 15px 35px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: $green;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page_student">
+            <header class="header">
+                <a class="title" href="./index.html">campus</a>
+
+                <nav class="navigation_menu">
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="link">timetable</div>
+                    <div class="active">
+                        <div class="link">temmiler</div>
+                        <span></span>
+                    </div>
+                </nav>
+                <div class="header_left">
+                    <div class="name_lastname">Dowran Dowranow</div>
+                    <div class="admin_img">
+                        <img id="admin" src="./images/admin.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <h1 class="table_title">temmilerim</h1>
+            <div class="table_container">
+                <div id="border" class="table_head left">#</div>
+                <div class="table_head">Ady, Familiyasy we Atasynyn ady</div>
+                <div class="table_head">Temmi alan senesi</div>
+                <div class="table_head">Sebabi</div>
+                <div class="table_head">Temmi caresi</div>
+                <div id="border" class="table_head right">Asyl nusgasy</div>
+            </div>
+            <footer class="footer">
+                <div class="footer_main">
+                    <p>Showing</p>
+                    <div class="page_num">1</div>
+                    <p>out of
+                        <span>1</span>
+                    </p>
+                </div>
+                <div class="footer_main">
+                    <div class="transfers_icons">
+                        <div class="transfer_icon passive">
+                            <svg onclick="prev()" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8848 1.77L10.1148 0L0.114765 10L10.1148 20L11.8848 18.23L3.65477 10L11.8848 1.77Z" fill="#323232"/>
+                            </svg>
+                            <p class="prev">Prev</p>
+                        </div>
+                        <div class="transfer_icon">
+                            <p class="next">Next</p>
+                            <svg onclick="next()" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.115234 18.23L1.88523 20L11.8852 10L1.88523 0L0.115234 1.77L8.34523 10L0.115234 18.23Z" fill="#323232"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    
+    <script src="./student_page.js"></script>
+</body>
+</html>
